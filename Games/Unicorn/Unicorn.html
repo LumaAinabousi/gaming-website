@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" as="style" crossorigin="true" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link href="css/unicorn.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="start-screen">
+    <button onclick="startGame()">Play</button>
+  </div>
+
+    <div id="canvas">
+        <img id="unicorn1" src="images/unicorn.png" alt="unicorn" />
+        <img id="unicorn2" src="images/unicorn.png" alt="unicorn" />
+        <img id="unicorn3" src="images/unicorn.png" alt="unicorn" />
+        <img id="unicorn4" src="images/unicorn.png" alt="unicorn" />
+        <img id="unicorn5" src="images/unicorn.png" alt="unicorn" />
+        <div class="score scoreContainer text-center">
+            <div class="score-text">Score</div>
+            <div id="score-counter">0</div>
+            <div class="score-text">Bullets</div>
+            <div id="bullet-counter">5</div>
+       </div>
+  </div>
+
+  <div id="game-over">
+    <div id="won-lost"></div>
+    <button onclick="gameOver()">Restart</button>
+  </div>
+
+  <script src="js/unicorn.js"></script>
+</body>
+</html>
