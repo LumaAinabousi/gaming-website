@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+
+body {
+  background-color: #645CAA;
+  color: #EBC7EB;
+  font-family: "Orbitron", courier, sans-serif;
+}
+
+/* ----------------------------    logo    ----------------------------*/
+
+header {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 32px;
+  background-color: #BFACE0
+}
+
+/* for the font*/
+/*@font-face {*/
+/*  font-family: Cyber;*/
+/*  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");*/
+/*}*/
+
+#logo{
+    margin:20px;
+    padding:10px;
+    color: #645CAA;
+}
+#logoIMG{
+    width:80%;
+    height:80%;
+}
+li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  width: 150px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+li:hover {
+  background: linear-gradient(145deg, #A084CA, #BFACE0);
+}
+
+ul {
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #645CAA;
+}
+li:hover > a {
+  color:  #645CAA;
+  text-decoration: none;
+}
+
+hr {
+  background-color: #05d9e8;
+  border-color: #c6e0e2;
+}
+
+/* put about back here */
+
+#abouttext {
+    padding: 30px;
+    text-align: justify;
+}
+
+h2 {
+
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+#play {
+  color: #645CAA;
+  padding:15px;
+
+  border-radius: 32px;
+  background: linear-gradient(-45deg, #645CAA, #FBFACD, #A084CA, #BFACE0);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#games {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin:0px;
+}
+
+.gameicon {
+  display: inline-block;
+  margin: 5px;
+  padding:5px;
+  width:65%;
+
+}
+
+footer {
+    margin: 10px;
+    padding:10px;
+}
+
+.bline{
+    border-left: 1px solid #EBC7EB;
+}
+
+.copyright{
+    margin: 10px;
+    font-size:10px;
+    
+}
+
+textarea {
+    width:60%;
+}
+
+  #about {
+      background-image: url("../images/about-removebg-preview.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: bottom;
+  }
+
+@media screen and (max-width:1080px) {
+  /* Styles for screens smaller than 900px */
+  body {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+  li {
+    font-size: 20px;
+    width: 100px;
+  }
+  #logo {
+    font-size: 20px;
+  }
+  #play {
+    font-size: 20px;
+  }
+  .gameicon {
+    width: 30%;
+  }
+  
+   #about {
+      background:none;
+  }
+  
+}
+
+
+
